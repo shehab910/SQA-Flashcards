@@ -1,22 +1,38 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getAllTerms, questionHeadding } from "./getQuestion";
 import "./App.css";
+
+const questions = getAllTerms();
 
 function App() {
 	const [isAnswerShown, setIsAnswerShown] = useState(false);
 	const [isHintShown, setIsHintShown] = useState(false);
-	const questionHeadding = "Replace with the scientific term";
-	const question =
-		"Problems identified when team members do not follow applicable standards, recorded processes, or procedures.";
-	const answer = "Noncompliance";
-	const hint = "applicable standards, recorded processes, or procedures.";
-	const slideLink = "https://www.google.com";
+	const [currQuestionI, setCurrQuestionI] = useState(0);
+	const currQuestion = questions[currQuestionI];
+
+	useEffect(() => {
+		setIsAnswerShown(false);
+		setIsHintShown(false);
+	}, [currQuestionI]);
+
+	const questionHeaddingText = currQuestion?.type
+		? questionHeadding(currQuestion?.type)
+		: "";
+	const question = currQuestion.question;
+	const answer = currQuestion.answer;
+	let hint = `lecture ${currQuestion.lectureNo}, ${currQuestion?.hint}`.trim();
+	if (hint.endsWith(",")) hint = hint.slice(0, -1);
+	const slideLink = `${currQuestion?.slideUrl}#slide=id.p${
+		currQuestion?.slideNo || 1
+	}`;
+
 	return (
 		<>
 			<div id="title">
 				<h1>احفظ يا طالب</h1>
 			</div>
 			<div className="main">
-				<h3>{questionHeadding}:</h3>
+				<h3>{questionHeaddingText}:</h3>
 				<h2>{question}</h2>
 				<p className={`hint ${!(isHintShown || isAnswerShown) && "blur"}`}>
 					Hint: {hint}
@@ -46,8 +62,19 @@ function App() {
 				)}
 
 				<div className="nav-btn-grp">
-					<button>ثواني كدا</button>
-					<button className="btn-outline">البعده</button>
+					<button
+						onClick={() => setCurrQuestionI((prev) => prev - 1)}
+						disabled={currQuestionI === 0}
+					>
+						ثواني كدا
+					</button>
+					<button
+						onClick={() => setCurrQuestionI((prev) => prev + 1)}
+						disabled={currQuestionI === questions.length - 1}
+						className="btn-outline"
+					>
+						البعده
+					</button>
 				</div>
 			</div>
 		</>
