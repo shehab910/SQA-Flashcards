@@ -14,7 +14,7 @@ export interface Question {
 export const defaultLectureQuestions: Question[] = [
 	{
 		lectureNo: 1,
-		questionHeader: 'Replace with key Term(s):',
+		questionHeader: 'Replace with key Term(s)',
 		question:
 			'Problems identified when team members do not follow applicable standards, recorded processes, or procedures ',
 		answer: 'Noncompliance issues',
@@ -25,7 +25,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Replace with key Term(s):',
+		questionHeader: 'Replace with key Term(s)',
 		question:
 			'Quality assurance process to develop processes to reduce defects by avoiding or correcting ',
 		answer: 'Poka-Yoke',
@@ -36,7 +36,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Replace with key Term(s):',
+		questionHeader: 'Replace with key Term(s)',
 		question:
 			'Proven set of global best practices that drives business performance through benchmark key capabilities ',
 		answer: 'Capability Maturity Model Integration (CMMI)®',
@@ -47,7 +47,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Replace with key Term(s):',
+		questionHeader: 'Replace with key Term(s)',
 		question:
 			"Ongoing process that ensures software product meets and complies with organization's established and standardized quality specifications",
 		answer: 'Software quality assurance (SQA)',
@@ -58,7 +58,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Replace with key Term(s):',
+		questionHeader: 'Replace with key Term(s)',
 		question:
 			'Tangible resources used by an organization to guide the management of its projects and operations',
 		answer: 'Organizational process assets',
@@ -69,7 +69,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Replace with key Term(s):',
+		questionHeader: 'Replace with key Term(s)',
 		question: 'A process-level improvement training and appraisal program',
 		answer: '',
 		hint: '',
@@ -79,7 +79,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Replace with key Term(s):',
+		questionHeader: 'Replace with key Term(s)',
 		question:
 			'Proven set of global best practices that drives business performance through building and benchmarking key capabilities',
 		answer: 'Capability Maturity Model Integration (CMMI)®',
@@ -90,7 +90,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'Compare QA and QC in respect of focus and assessment measures/tools.',
 		answer: '(Open the slide(s) from below)',
@@ -101,7 +101,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'Objectivity in process quality assurance evaluations is critical to success of project. List four objective evaluation methods.',
 		answer: '(Open the slide(s) from below)',
@@ -112,7 +112,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Mention four benefits of software quality assurance.',
 		answer: '(Open the slide(s) from below and one after it)',
 		hint: '',
@@ -122,7 +122,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Explain what is meant by PDCA/Deming cycle.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -132,7 +132,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'An agile project using Scrum has many opportunities to objectively evaluate ceremonies and work products. Describe three opportunities.',
 		answer: '(Open the slide(s) from below)',
@@ -143,7 +143,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'Process tailoring is a critical activity that allows controlled changes to the processes due to the specific needs of a project or a part of the organization. Mention three reasons for process tailoring. ',
 		answer: '(Open the slide(s) from below)',
@@ -154,7 +154,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'List four examples of organizational process assets.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -164,7 +164,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Identify three similarities between QA and QC.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -174,7 +174,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 1,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Mention three quality assurance work products.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -501,7 +501,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'The aim of 5 whys root cause analysis is to find the main technical causes  behind the problem. Comment.',
 		answer: '(Open the slide(s) from below)',
@@ -512,7 +512,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'When to perform causal analysis? Which factors affect decision of effort and formality required?',
 		answer: '(Open the slide(s) from below)',
@@ -523,7 +523,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Identify elements of process improvement proposal.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -533,7 +533,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Discuss advantages of PCDA approach.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -543,7 +543,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'Defining the problem is an important step in root cause analysis. Explain the rule that should be followed in defining the problem.',
 		answer: '(Open the slide(s) from below)',
@@ -554,7 +554,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Describe four types of costs of quality.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -564,7 +564,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Identify steps of internal audit process.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -574,7 +574,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Explain roles in RACI model.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -584,7 +584,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'List three benefits and limitations of cost of quality system. ',
 		answer: '(Open the slide(s) from below)',
@@ -842,7 +842,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 3,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Explain the testing principles in details.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -852,7 +852,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 3,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'Identify three guidelines to successful conduct of review process.',
 		answer: '(Open the slide(s) from below)',
@@ -863,7 +863,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 3,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Clarify the tester role during each of SDLC phases.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -873,7 +873,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 3,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question:
 			'What should a tester do in case a component is not finished and he needs to conduct component integration testing?',
 		answer: '(Open the slide(s) from below)',
@@ -884,7 +884,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 3,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Compare between regression and confirmation testing types.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -894,7 +894,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 3,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: 'Illustrate steps of dynamic testing using a diagram.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -1004,7 +1004,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 4,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: '',
 		answer: '(Open the 6 slide(s) from below)',
 		hint: '',
@@ -1014,7 +1014,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 4,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: '',
 		answer: '(Open the 2 slide(s) from below)',
 		hint: '',
@@ -1024,7 +1024,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 4,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: '',
 		answer: '(Open the 3 slide(s) from below)',
 		hint: '',
@@ -1034,7 +1034,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 4,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: '',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -1044,7 +1044,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 4,
-		questionHeader: 'Exercise:',
+		questionHeader: 'Exercise',
 		question: '',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
@@ -1132,6 +1132,252 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		id: 103,
+	},
+	//? LECTURE 5
+	{
+		id: 104,
+		lectureNo: 5,
+		questionHeader: 'Replace with key Term(s)',
+		question:
+			'Black-box testing technique used very useful for designing acceptance tests with customer/user participation',
+		answer: 'Use Case Testing Technique',
+		hint: '',
+		slideNo: 13,
+		solved: false,
+	},
+	{
+		id: 105,
+		lectureNo: 5,
+		questionHeader: 'Replace with key Term(s)',
+		question: 'The time gap between date of detection & date of closure',
+		answer: 'Defect Age',
+		hint: '',
+		slideNo: 40,
+		solved: false,
+	},
+	{
+		id: 106,
+		lectureNo: 5,
+		questionHeader: 'Replace with key Term(s)',
+		question:
+			'Black-box testing technique useful for testing the implementation of system requirements that specify how different combinations of conditions result in different outcomes',
+		answer: 'Decision Table Technique',
+		hint: '',
+		slideNo: 8,
+		solved: false,
+	},
+	{
+		id: 107,
+		lectureNo: 5,
+		questionHeader: 'Replace with key Term(s)',
+		question:
+			'Testing technique where informal (not pre-defined) tests are designed, executed, logged, and evaluated dynamically during test execution. The test results are used to create tests for the areas that may need more testing',
+		answer: 'Exploratory Testing Technique',
+		hint: '',
+		slideNo: 20,
+		solved: false,
+	},
+	{
+		id: 108,
+		lectureNo: 5,
+		questionHeader: 'Replace with key Term(s)',
+		question:
+			'Type of testing is used to focus effort required during testing. It is used to decide where/when to start testing and identify areas that need more attention',
+		answer: 'Risk-based Testing',
+		hint: '',
+		slideNo: 31,
+		solved: false,
+	},
+	{
+		id: 109,
+		lectureNo: 5,
+		questionHeader: 'Replace with key Term(s)',
+		question:
+			'Tool used to establish and maintain integrity of work products (components, data and documentation) of the system through the whole life cycle',
+		answer: 'Configuration Management',
+		hint: '',
+		slideNo: 28,
+		solved: false,
+	},
+	{
+		id: 110,
+		lectureNo: 5,
+		questionHeader: 'Replace with key Term(s)',
+		question:
+			'Black-box testing technique used only when data is numeric or sequential',
+		answer: 'BVA',
+		hint: '',
+		slideNo: 7,
+		solved: false,
+	},
+	{
+		id: 111,
+		lectureNo: 5,
+		questionHeader: 'Identify Type of Project Risk',
+		question: 'Test environment not ready on time',
+		answer: 'Technical Issue',
+		hint: '',
+		slideNo: 33,
+		solved: false,
+	},
+	{
+		id: 112,
+		lectureNo: 5,
+		questionHeader: 'Identify Type of Project Risk',
+		question: 'Skill, training and staff shortages',
+		answer: 'Organizational Issue',
+		hint: '',
+		slideNo: 33,
+		solved: false,
+	},
+	{
+		id: 113,
+		lectureNo: 5,
+		questionHeader: 'Identify Type of Project Risk',
+		question: 'Contractual issues',
+		answer: 'Supplier Issue',
+		hint: '',
+		slideNo: 33,
+		solved: false,
+	},
+	{
+		id: 114,
+		lectureNo: 5,
+		questionHeader: 'Identify Type of Project Risk',
+		question:
+			'Improper attitude such as not appreciating the value of finding defects during testing',
+		answer: 'Organizational Issue',
+		hint: '',
+		slideNo: 33,
+		solved: false,
+	},
+	{
+		id: 115,
+		lectureNo: 5,
+		questionHeader: 'Identify Type of Project Risk',
+		question: 'Low quality of the design, code, or configuration data',
+		answer: 'Technical Issue',
+		hint: '',
+		slideNo: 33,
+		solved: false,
+	},
+	{
+		id: 116,
+		lectureNo: 5,
+		questionHeader: 'Identify Approach used in Testing Tool',
+		question:
+			'Generic script processes action words describing the actions to be taken, which then calls scripts to process the associated test data',
+		answer: 'Keyword Driven',
+		hint: '',
+		slideNo: 50,
+		solved: false,
+	},
+	{
+		id: 117,
+		lectureNo: 5,
+		questionHeader: 'Identify Approach used in Testing Tool',
+		question:
+			'Separate out the test inputs and expected results, usually into a spreadsheet, and uses a more generic test script that can read the input data and execute the same test script with different data',
+		answer: 'Data Driven',
+		hint: '',
+		slideNo: 50,
+		solved: false,
+	},
+	{
+		id: 118,
+		lectureNo: 5,
+		questionHeader: 'Identify Approach used in Testing Tool',
+		question:
+			'Enable a functional specification to be captured in the form of a model, such as an activity diagram. This task is generally performed by a system designer',
+		answer: 'Model Based',
+		hint: '',
+		slideNo: 50,
+		solved: false,
+	},
+	{
+		id: 119,
+		lectureNo: 5,
+		questionHeader: 'Exersise',
+		question: 'How to measure the decision testing coverage?',
+		answer: '(Open the slide(s) from below)',
+		hint: '',
+		slideNo: 16,
+		solved: false,
+	},
+	{
+		id: 120,
+		lectureNo: 5,
+		questionHeader: 'Exersise',
+		question: 'When exploratory testing is most appropriate?',
+		answer: '(Open the slide(s) from below)',
+		hint: '',
+		slideNo: 20,
+		solved: false,
+	},
+	{
+		id: 121,
+		lectureNo: 5,
+		questionHeader: 'Exersise',
+		question:
+			'What is the common minimum coverage standard for decision table testing?',
+		answer: '(Open the slide(s) from below)',
+		hint: '',
+		slideNo: 8,
+		solved: false,
+	},
+	{
+		id: 122,
+		lectureNo: 5,
+		questionHeader: 'Exersise',
+		question:
+			'Contrast benefits and drawbacks of hiring independent testers',
+		answer: '(Open the slide(s) from below)',
+		hint: '',
+		slideNo: 24,
+		solved: false,
+	},
+	{
+		id: 123,
+		lectureNo: 5,
+		questionHeader: 'Exersise',
+		question:
+			'Resulting product risk information is used to guide test activities. Elaborate',
+		answer: '(Open the slide(s) from below)',
+		hint: '',
+		slideNo: 31,
+		solved: false,
+	},
+	{
+		id: 124,
+		lectureNo: 5,
+		questionHeader: 'Exersise',
+		question: 'Illustrate the bug life cycle using a diagram',
+		answer: '(Open the slide(s) from below)',
+		hint: '',
+		slideNo: 40,
+		solved: false,
+	},
+	{
+		id: 125,
+		lectureNo: 5,
+		questionHeader: 'Exersise',
+		question:
+			'Identify three potential risks of using tools to support testing',
+		answer: '(Open the slide(s) from below)',
+		hint: '',
+		slideNo: 48,
+		solved: false,
+	},
+	{
+		id: 126,
+		lectureNo: 5,
+		questionHeader: 'Exersise',
+		question:
+			'After completing the tool selection and a successful proof-of-concept evaluation, introducing selected tool into an organization generally starts with pilot project. Why?',
+		answer: '(Open the slide(s) from below)',
+		hint: '',
+		slideNo: 56,
+		solved: false,
 	},
 ];
 
