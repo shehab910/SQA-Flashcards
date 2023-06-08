@@ -44,7 +44,7 @@ function App() {
 
 	const slideLink =
 		currQuestion.slideNo > 0
-			? `${getSlideUrl(currQuestion.slideNo)}#slide=id.p${
+			? `${getSlideUrl(currQuestion.lectureNo)}#slide=id.p${
 					currQuestion.slideNo || 1
 					// eslint-disable-next-line no-mixed-spaces-and-tabs
 			  }`
