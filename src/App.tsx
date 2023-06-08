@@ -1,9 +1,28 @@
-import "./App.css";
+import './App.css';
 
-import { getAllTerms, questionHeadding } from "./getQuestion";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
+import { getAllQuestions, getSlideUrl, saveQuestions } from './getQuestion';
+import { Question } from './data';
 
-const questions = getAllTerms();
+const repoUrl = 'https://github.com/shehab910/SQA-Flashcards';
+const makeIssueUrl = (questionObj: Question) => {
+	const { id: questionID, question, questionHeader } = questionObj;
+	const title = encodeURIComponent(`Slide number for question ${questionID}`);
+	const label = encodeURIComponent('slide number missing');
+	const body = encodeURIComponent(
+		`Please add the slide number for question with id: **${questionID}**
+
+# Question ${questionID}:
+### ${questionHeader}
+${question}
+# Answer found in slide number:
+	slideNo: <PUT SLIDE NUMBER HERE>
+`
+	);
+	return `${repoUrl}/issues/new?labels=${label}&title=${title}&body=${body}`;
+};
+
+const questions = getAllQuestions();
 
 function App() {
 	const [isAnswerShown, setIsAnswerShown] = useState(false);
@@ -16,16 +35,24 @@ function App() {
 		setIsHintShown(false);
 	}, [currQuestionI]);
 
-	const questionHeaddingText = currQuestion?.type
-		? questionHeadding(currQuestion?.type)
-		: "";
+	const questionHeaddingText = currQuestion.questionHeader;
 	const question = currQuestion.question;
 	const answer = currQuestion.answer;
-	let hint = `lecture ${currQuestion.lectureNo}, ${currQuestion?.hint}`.trim();
-	if (hint.endsWith(",")) hint = hint.slice(0, -1);
-	const slideLink = `${currQuestion?.slideUrl}#slide=id.p${
-		currQuestion?.slideNo || 1
-	}`;
+	let hint =
+		`lecture ${currQuestion.lectureNo}, ${currQuestion?.hint}`.trim();
+	if (hint.endsWith(',')) hint = hint.slice(0, -1);
+
+	const slideLink =
+		currQuestion.slideNo > 0
+			? `${getSlideUrl(currQuestion.slideNo)}#slide=id.p${
+					currQuestion.slideNo || 1
+					// eslint-disable-next-line no-mixed-spaces-and-tabs
+			  }`
+			: makeIssueUrl(currQuestion);
+	const slideLinkBtnText =
+		currQuestion.slideNo > 0
+			? `Open Lecture ${currQuestion.lectureNo} Slide ${currQuestion.slideNo}`
+			: 'You know the slide? Contribute now!';
 
 	return (
 		<div className="container">
@@ -35,10 +62,16 @@ function App() {
 			<div className="main">
 				<h3>{questionHeaddingText}:</h3>
 				<p className="question">{question}</p>
-				<p className={`hint ${!(isHintShown || isAnswerShown) && "blur"}`}>
+				<p
+					className={`hint ${
+						!(isHintShown || isAnswerShown) && 'blur'
+					}`}
+				>
 					Hint: {hint}
 				</p>
-				<p className={`answer ${!isAnswerShown ? "blur" : ""}`}>{answer}</p>
+				<p className={`answer ${!isAnswerShown ? 'blur' : ''}`}>
+					{answer}
+				</p>
 			</div>
 			<div className="btn-grp controls">
 				<button
@@ -58,9 +91,18 @@ function App() {
 				)}
 				{isAnswerShown && (
 					<a href={slideLink} target="#blank">
-						<button className="btn-contained">Open Lecture</button>
+						<button className="btn-contained">
+							{slideLinkBtnText}
+						</button>
 					</a>
 				)}
+
+				<button
+					className="btn-contained"
+					onClick={() => saveQuestions(questions)}
+				>
+					Save Progress
+				</button>
 
 				<div className="nav-btn-grp">
 					<button
