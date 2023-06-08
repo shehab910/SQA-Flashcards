@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
-import { getAllTerms, questionHeadding } from "./getQuestion";
 import "./App.css";
+
+import { getAllTerms, questionHeadding } from "./getQuestion";
+import { useEffect, useState } from "react";
 
 const questions = getAllTerms();
 
@@ -27,37 +28,37 @@ function App() {
 	}`;
 
 	return (
-		<>
+		<div className="container">
 			<div id="title">
 				<h1>احفظ يا طالب</h1>
 			</div>
 			<div className="main">
 				<h3>{questionHeaddingText}:</h3>
-				<h2>{question}</h2>
+				<p className="question">{question}</p>
 				<p className={`hint ${!(isHintShown || isAnswerShown) && "blur"}`}>
 					Hint: {hint}
 				</p>
 				<p className={`answer ${!isAnswerShown ? "blur" : ""}`}>{answer}</p>
 			</div>
-			<div className="btn-grp controls ">
+			<div className="btn-grp controls">
 				<button
 					id="show-hint"
 					disabled={isHintShown || isAnswerShown}
 					onClick={() => setIsHintShown(true)}
 				>
-					هممم
+					Hint
 				</button>
 				{!isAnswerShown && (
 					<button
 						onClick={() => setIsAnswerShown(true)}
 						className="btn-contained"
 					>
-						الاجابة
+						Answer
 					</button>
 				)}
 				{isAnswerShown && (
 					<a href={slideLink} target="#blank">
-						<button className="btn-contained">وريني المحاضرة</button>
+						<button className="btn-contained">Open Lecture</button>
 					</a>
 				)}
 
@@ -66,18 +67,18 @@ function App() {
 						onClick={() => setCurrQuestionI((prev) => prev - 1)}
 						disabled={currQuestionI === 0}
 					>
-						ثواني كدا
+						Before
 					</button>
 					<button
 						onClick={() => setCurrQuestionI((prev) => prev + 1)}
 						disabled={currQuestionI === questions.length - 1}
 						className="btn-outline"
 					>
-						البعده
+						Next
 					</button>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
 
