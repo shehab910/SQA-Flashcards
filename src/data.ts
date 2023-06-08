@@ -1134,3 +1134,6 @@ export const defaultLectureQuestions: Question[] = [
 		id: 103,
 	},
 ];
+
+// lecture x, slide y
+const MISSING_QUESTIONS_SLIDES = [];
