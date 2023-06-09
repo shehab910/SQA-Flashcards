@@ -1,12 +1,7 @@
 import './App.css';
 
-import {
-	deleteLocalQuestions,
-	getAllQuestions,
-	getSlideUrl,
-	saveQuestions,
-} from './getQuestion';
-import { useCallback, useEffect, useState } from 'react';
+import { getAllQuestions, getSlideUrl } from './getQuestion';
+import { useEffect, useState } from 'react';
 
 import { makeSlideNoIssueUrl } from './issueHandler';
 
@@ -41,7 +36,7 @@ function App() {
 			// saveQuestions([currQuestion]);
 			setIsLastQuestion(true);
 		}
-	}, [currQuestion, currQuestionI]);
+	}, [currQuestion, currQuestionI, questions.length]);
 
 	const questionHeaddingText = currQuestion.questionHeader;
 	const question = currQuestion.question;
