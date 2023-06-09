@@ -1,4 +1,4 @@
-import { Question, defaultLectureQuestions } from './data';
+import { defaultLectureQuestions } from './data';
 
 type QuestionType = 'shortAnswer' | 'longAnswer';
 
@@ -40,24 +40,24 @@ export const questionHeadding = (questType: QuestionType) => {
 	}
 };
 
-const getLocalQuestions = () => {
-	// get from local storage
-	const localQuestions = localStorage.getItem('lectureQuestions');
-	if (localQuestions) {
-		return JSON.parse(localQuestions) as Question[];
-	}
-};
+// const getLocalQuestions = () => {
+// 	// get from local storage
+// 	const localQuestions = localStorage.getItem('lectureQuestions');
+// 	if (localQuestions) {
+// 		return JSON.parse(localQuestions) as Question[];
+// 	}
+// };
 
-export const deleteLocalQuestions = () => {
-	localStorage.removeItem('lectureQuestions');
-};
+// export const deleteLocalQuestions = () => {
+// 	localStorage.removeItem('lectureQuestions');
+// };
 
-export const saveQuestions = (questions: Question[]) => {
-	localStorage.setItem('lectureQuestions', JSON.stringify(questions));
-};
+// export const saveQuestions = (questions: Question[]) => {
+// 	localStorage.setItem('lectureQuestions', JSON.stringify(questions));
+// };
 
 export const getAllQuestions = () => {
-	const localQuestions = getLocalQuestions() || [...defaultLectureQuestions];
+	const localQuestions = [...defaultLectureQuestions];
 	return localQuestions
 		.filter((q) => q.solved === false)
 		.sort(() => Math.random() - 0.5);
