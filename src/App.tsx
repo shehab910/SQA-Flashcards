@@ -12,12 +12,8 @@ function App() {
 	const [isHintShown, setIsHintShown] = useState(false);
 	const [isLastQuestion, setIsLastQuestion] = useState(false);
 	const [currQuestionI, setCurrQuestionI] = useState(0);
-	const [questions, setQuestions] = useState([
-		...allQuestions.filter((q) => q.lectureNo === 1),
-	]);
-	const [QN, setQN] = useState(
-		allQuestions.filter((q) => q.lectureNo === 1).length
-	);
+	const [questions, setQuestions] = useState([...allQuestions]);
+	const [QN, setQN] = useState(allQuestions.length);
 	const currQuestion = questions[currQuestionI];
 
 	// const saveBtnHandler = useCallback(() => {
@@ -57,7 +53,7 @@ function App() {
 			? `Open Lecture ${currQuestion.lectureNo} Slide ${currQuestion.slideNo}`
 			: 'You know the slide? Contribute now!';
 	const saveBtnText = isLastQuestion
-		? 'خلصت يا دحيح 😉، ابدأ من الاول'
+		? 'خلصت يا دحيح 😉، اللي بعده'
 		: 'Save Progress';
 
 	const nextQuestionHandler = () => {
@@ -67,7 +63,21 @@ function App() {
 
 	const handleSelect = (e: any) => {
 		const lecNo = +e.target.value;
-		const newQuestions = allQuestions.filter((q) => q.lectureNo === lecNo);
+
+		// if (lecNo === 0) {
+		// 	const newQuestions = [...allQuestions];
+		// 	newQuestions.forEach((q, i) => {
+		// 		q.id = i;
+		// 	});
+		// 	setQuestions(newQuestions);
+		// 	setQN(allQuestions.length);
+		// 	setCurrQuestionI(0);
+		// }
+
+		const newQuestions =
+			lecNo === 0
+				? [...allQuestions]
+				: allQuestions.filter((q) => q.lectureNo === lecNo);
 
 		newQuestions.forEach((q, i) => {
 			q.id = i;
@@ -87,6 +97,7 @@ function App() {
 					id="lec"
 					onChange={handleSelect}
 				>
+					<option value="0">All Lectures</option>
 					<option value="1">Lec 1</option>
 					<option value="2">Lec 2</option>
 					<option value="3">Lec 3</option>
