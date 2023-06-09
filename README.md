@@ -8,11 +8,13 @@ A collection of questions and answers from question banks for ISTQB Foundation L
 - [x] Hints
   - If there is not hints for that question, the hint will be the lecture number only.
 - [x] Open the specific slide that has the answer displayed for a question
+- [x] Resposive
 - [x] Easily create an issue with the missing **slide number**
 - [ ] Easily create an issue with the missing **hint**
 - [ ] Display questions and answers for specific lecture
 - [ ] Display progress
 - [ ] Add all questions and answers
+- [ ] Fix dark mode
 - [ ] Add How to contribute section to README
 - [ ] Add Screenshots section to README
 ## How to use
