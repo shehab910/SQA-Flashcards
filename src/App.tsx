@@ -25,14 +25,14 @@ function App() {
 	);
 	const currQuestion = questions[currQuestionI];
 
-	const saveBtnHandler = useCallback(() => {
-		if (isLastQuestion) {
-			deleteLocalQuestions();
-			window.location.reload();
-		} else {
-			saveQuestions(questions);
-		}
-	}, [isLastQuestion]);
+	// const saveBtnHandler = useCallback(() => {
+	// 	if (isLastQuestion) {
+	// 		deleteLocalQuestions();
+	// 		window.location.reload();
+	// 	} else {
+	// 		saveQuestions(questions);
+	// 	}
+	// }, [isLastQuestion]);
 
 	useEffect(() => {
 		setIsAnswerShown(false);
