@@ -14,6 +14,12 @@ export const getSlideUrl = (slideNumber: number) => {
 			return 'https://docs.google.com/presentation/d/15_LXGam1jmhfzyHqnYAvTT-olIeaxZnP/edit';
 		case 5:
 			return 'https://docs.google.com/presentation/d/18TA9utmpSLXEtMq4i11-6KezsTBINWIR/edit';
+		case 6:
+			return 'https://docs.google.com/presentation/d/19nsq4CcKYRlHyZDgYvTyGuxPJ3SNzmm5/edit';
+		case 7:
+			return 'https://docs.google.com/presentation/d/1_tDpiD1F0PN6xbkondPYp52bodGwiPzN/edit';
+		case 8:
+			return 'https://docs.google.com/presentation/d/1fFC90rVeEfvnbGUG-oY9WuS_CW8X1g9P/edit';
 		default:
 			return '';
 	}
@@ -40,6 +46,10 @@ const getLocalQuestions = () => {
 	if (localQuestions) {
 		return JSON.parse(localQuestions) as Question[];
 	}
+};
+
+export const deleteLocalQuestions = () => {
+	localStorage.removeItem('lectureQuestions');
 };
 
 export const saveQuestions = (questions: Question[]) => {
