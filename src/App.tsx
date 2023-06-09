@@ -1,21 +1,28 @@
 import './App.css';
 
-import { useEffect, useState, useCallback } from 'react';
 import {
 	deleteLocalQuestions,
 	getAllQuestions,
 	getSlideUrl,
 	saveQuestions,
 } from './getQuestion';
+import { useCallback, useEffect, useState } from 'react';
+
 import { makeSlideNoIssueUrl } from './issueHandler';
 
-const questions = getAllQuestions();
+const allQuestions = getAllQuestions();
 
 function App() {
 	const [isAnswerShown, setIsAnswerShown] = useState(false);
 	const [isHintShown, setIsHintShown] = useState(false);
 	const [isLastQuestion, setIsLastQuestion] = useState(false);
 	const [currQuestionI, setCurrQuestionI] = useState(0);
+	const [questions, setQuestions] = useState([
+		...allQuestions.filter((q) => q.lectureNo === 1),
+	]);
+	const [QN, setQN] = useState(
+		allQuestions.filter((q) => q.lectureNo === 1).length
+	);
 	const currQuestion = questions[currQuestionI];
 
 	const saveBtnHandler = useCallback(() => {
@@ -31,7 +38,7 @@ function App() {
 		setIsAnswerShown(false);
 		setIsHintShown(false);
 		if (currQuestionI === questions.length - 1 || questions.length <= 1) {
-			saveQuestions([currQuestion]);
+			// saveQuestions([currQuestion]);
 			setIsLastQuestion(true);
 		}
 	}, [currQuestion, currQuestionI]);
@@ -63,22 +70,54 @@ function App() {
 		setCurrQuestionI((prev) => prev + 1);
 	};
 
+	const handleSelect = (e: any) => {
+		const lecNo = +e.target.value;
+		const newQuestions = allQuestions.filter((q) => q.lectureNo === lecNo);
+
+		newQuestions.forEach((q, i) => {
+			q.id = i;
+		});
+
+		setQuestions(newQuestions);
+		setQN(newQuestions.length);
+	};
+
 	return (
 		<div className="container">
 			<div id="title">
 				<h1>احفظ يا طالب</h1>
+				<select
+					title="Lecture Number"
+					name="lec"
+					id="lec"
+					onChange={handleSelect}
+				>
+					<option value="1">Lec 1</option>
+					<option value="2">Lec 2</option>
+					<option value="3">Lec 3</option>
+					<option value="4">Lec 4</option>
+					<option value="5">Lec 5</option>
+					<option value="6">Lec 6</option>
+					<option value="7">Lec 7</option>
+					{/* <option value="8">Lec 8</option> */}
+				</select>
+				<p># Questions = {QN}</p>
 			</div>
 			<div className="main">
 				<h3>{questionHeaddingText}:</h3>
 				<p className="question">{question}</p>
 				<p
 					className={`hint ${
-						!(isHintShown || isAnswerShown) && 'blur'
+						!(isHintShown || isAnswerShown) && 'blur blur-hint'
 					}`}
 				>
 					Hint: {hint}
 				</p>
-				<p className={`answer ${!isAnswerShown ? 'blur' : ''}`}>
+				<p
+					className={`answer ${
+						!isAnswerShown ? 'blur blur-answer' : ''
+					}`}
+				>
 					{answer}
 				</p>
 			</div>
@@ -106,9 +145,9 @@ function App() {
 					</a>
 				)}
 
-				<button className="btn-contained" onClick={saveBtnHandler}>
+				{/* <button className="btn-contained" onClick={saveBtnHandler}>
 					{saveBtnText}
-				</button>
+				</button> */}
 
 				<div className="nav-btn-grp">
 					<button
@@ -117,6 +156,11 @@ function App() {
 					>
 						Before
 					</button>
+
+					{isLastQuestion && (
+						<p className="btn-outline finished">{saveBtnText}</p>
+					)}
+
 					<button
 						onClick={nextQuestionHandler}
 						disabled={currQuestionI === questions.length - 1}

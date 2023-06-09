@@ -272,7 +272,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify root cause analysis tool:',
+		questionHeader: 'Identify root cause analysis tool',
 		question:
 			'Visual representations of a relationship between two sets of data to test correlation between variables.',
 		answer: 'SCATTER PLOT',
@@ -283,7 +283,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify root cause analysis tool:',
+		questionHeader: 'Identify root cause analysis tool',
 		question:
 			'Includes a severity occurrence and detection rating to calculate risk and determine the next steps.',
 		answer: 'FMEA',
@@ -294,7 +294,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify root cause analysis tool:',
+		questionHeader: 'Identify root cause analysis tool',
 		question:
 			'Looking at any problem and drilling down by asking questions and avoid answers that are too simple or overlook important details.',
 		answer: '5 WHYS',
@@ -305,7 +305,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify root cause analysis tool:',
+		questionHeader: 'Identify root cause analysis tool',
 		question:
 			'Every contributing cause and its potential effects can be shown under categories and sub-categories.',
 		answer: 'FISHBONE ',
@@ -316,7 +316,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify root cause analysis tool:',
+		questionHeader: 'Identify root cause analysis tool',
 		question:
 			'Bar graph that groups the frequency distribution to show the relative significance of causes of failure.',
 		answer: 'PARETO CHART ',
@@ -327,7 +327,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify root cause analysis tool:',
+		questionHeader: 'Identify root cause analysis tool',
 		question:
 			'Group activity to collect different viewpoints encouraging a deeper level of critical thinking.',
 		answer: 'BRAINSTORMING',
@@ -338,7 +338,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify type of root cause:',
+		questionHeader: 'Identify type of root cause',
 		question: 'Picking the wrong person for a task.',
 		answer: 'Organizational',
 		hint: '',
@@ -348,7 +348,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify type of root cause:',
+		questionHeader: 'Identify type of root cause',
 		question: 'The server is not booting up.',
 		answer: 'Physical',
 		hint: '',
@@ -358,7 +358,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify type of root cause:',
+		questionHeader: 'Identify type of root cause',
 		question: 'Instructions not accurately followed.',
 		answer: 'Human',
 		hint: '',
@@ -368,7 +368,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify PDCA Phase:',
+		questionHeader: 'Identify PDCA Phase',
 		question: 'Incorporate your plan on a small scale .',
 		answer: 'Do',
 		hint: '',
@@ -378,7 +378,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify PDCA Phase:',
+		questionHeader: 'Identify PDCA Phase',
 		question: 'Identify resource needs.',
 		answer: 'Plan',
 		hint: '',
@@ -388,7 +388,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify PDCA Phase:',
+		questionHeader: 'Identify PDCA Phase',
 		question: 'PDCA model becomes the new standard baseline. ',
 		answer: 'Act',
 		hint: '',
@@ -398,7 +398,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'Identify PDCA Phase:',
+		questionHeader: 'Identify PDCA Phase',
 		question: "Audit your plan's execution.",
 		answer: 'Check',
 		hint: '',
@@ -408,9 +408,9 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'MCQ:',
+		questionHeader: 'MCQ',
 		question:
-			'The outputs of the management reviews shall include decisions and actions related to all following, except:',
+			'The outputs of the management reviews shall include decisions and actions related to all following, except',
 		choices: [
 			'a. opportunities for improvement',
 			'b. need for changes to quality management system',
@@ -425,7 +425,7 @@ export const defaultLectureQuestions: Question[] = [
 	},
 	{
 		lectureNo: 2,
-		questionHeader: 'MCQ:',
+		questionHeader: 'MCQ',
 		question: 'Which of the following is not included in action plan?',
 		choices: [
 			'a. affected stakeholders',
@@ -601,7 +601,7 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		lectureNo: 3,
-		questionHeader: 'Complete:',
+		questionHeader: 'Complete',
 		id: 54,
 	},
 	{
@@ -612,7 +612,7 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		lectureNo: 3,
-		questionHeader: 'Complete:',
+		questionHeader: 'Complete',
 		id: 55,
 	},
 	{
@@ -623,7 +623,7 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		lectureNo: 3,
-		questionHeader: 'Complete:',
+		questionHeader: 'Complete',
 		id: 56,
 	},
 	{
@@ -633,7 +633,7 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		lectureNo: 3,
-		questionHeader: 'Complete:',
+		questionHeader: 'Complete',
 		id: 57,
 	},
 	{
@@ -644,7 +644,7 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		lectureNo: 3,
-		questionHeader: 'Complete:',
+		questionHeader: 'Complete',
 		id: 58,
 	},
 	{
@@ -655,7 +655,7 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		lectureNo: 3,
-		questionHeader: 'Complete:',
+		questionHeader: 'Complete',
 		id: 59,
 	},
 	{
@@ -666,7 +666,7 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		lectureNo: 3,
-		questionHeader: 'Complete:',
+		questionHeader: 'Complete',
 		id: 60,
 	},
 	{
@@ -676,7 +676,7 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		lectureNo: 3,
-		questionHeader: 'Complete:',
+		questionHeader: 'Complete',
 		id: 61,
 	},
 	{
@@ -687,7 +687,7 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: -1,
 		solved: false,
 		lectureNo: 3,
-		questionHeader: 'Complete:',
+		questionHeader: 'Complete',
 		id: 62,
 	},
 	{
