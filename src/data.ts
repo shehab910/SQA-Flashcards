@@ -1547,4 +1547,4 @@ export const defaultLectureQuestions: Question[] = [
 // Stopped at the end of slide 50, lecture 8
 
 // lecture x, slide y
-const MISSING_QUESTIONS_SLIDES = [];
+export const MISSING_QUESTIONS_SLIDES = [];
