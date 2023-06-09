@@ -9,17 +9,17 @@ A collection of questions and answers from question banks for ISTQB Foundation L
   - If there is not hints for that question, the hint will be the lecture number only.
 - [x] Open the specific slide that has the answer displayed for a question
 - [x] Easily create an issue with the missing **slide number**
-- [] Easily create an issue with the missing **hint**
-- [] Display questions and answers for specific lecture
-- [] Display progress
-- [] Add all questions and answers
-- [] Add How to contribute section to README
-- [] Add Screenshots section to README
+- [ ] Easily create an issue with the missing **hint**
+- [ ] Display questions and answers for specific lecture
+- [ ] Display progress
+- [ ] Add all questions and answers
+- [ ] Add How to contribute section to README
+- [ ] Add Screenshots section to README
 ## How to use
 Just visit the [website](https://sqa-flashcard.netlify.app/) and start [memorizing](https://media.tenor.com/52yUflMRmKUAAAAM/peeposad.gif)!
 ## Contributes
-1. (Shehab Ihab)[https://github.com/shehab910/]
-1. (Omar Abdulrahman)[https://github.com/omarr45/]
-  - Improved styling & added missing questions.
+1. [Shehab Ihab](https://github.com/shehab910/)
+1. [Omar Abdulrahman](https://github.com/omarr45/)
+    1. Improved styling & added missing questions.
 1. Seif Essam
-  - Provided solutions for most of the questions.
+    1. Provided solutions for most of the questions.
