@@ -1005,7 +1005,8 @@ export const defaultLectureQuestions: Question[] = [
 	{
 		lectureNo: 4,
 		questionHeader: 'Exercise',
-		question: '',
+		question:
+			'Identify testing life cycle phases and deliverable from each phase.',
 		answer: '(Open the 6 slide(s) from below)',
 		hint: '',
 		slideNo: 4,
@@ -1015,7 +1016,7 @@ export const defaultLectureQuestions: Question[] = [
 	{
 		lectureNo: 4,
 		questionHeader: 'Exercise',
-		question: '',
+		question: 'Mention three entry and three exit criteria.',
 		answer: '(Open the 2 slide(s) from below)',
 		hint: '',
 		slideNo: 22,
@@ -1025,7 +1026,8 @@ export const defaultLectureQuestions: Question[] = [
 	{
 		lectureNo: 4,
 		questionHeader: 'Exercise',
-		question: '',
+		question:
+			'Give an example on a test work product for each of the following test activities: test planning, monitoring, analysis, design, implementation, execution and completion.',
 		answer: '(Open the 3 slide(s) from below)',
 		hint: '',
 		slideNo: 31,
@@ -1035,7 +1037,8 @@ export const defaultLectureQuestions: Question[] = [
 	{
 		lectureNo: 4,
 		questionHeader: 'Exercise',
-		question: '',
+		question:
+			'Explain three differences between test strategy and test plan.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
 		slideNo: 37,
@@ -1045,7 +1048,7 @@ export const defaultLectureQuestions: Question[] = [
 	{
 		lectureNo: 4,
 		questionHeader: 'Exercise',
-		question: '',
+		question: 'What is meant by test procedure?',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
 		slideNo: 59,
