@@ -1379,7 +1379,172 @@ export const defaultLectureQuestions: Question[] = [
 		slideNo: 56,
 		solved: false,
 	},
+	{
+		id: 127,
+		lectureNo: 6,
+		questionHeader: 'Complete',
+		question: 'The ...... is responsible for quality in Agile projects.',
+		answer: 'WHOLE TEAM',
+		hint: '',
+		slideNo: -1,
+		solved: false,
+	},
+	{
+		id: 128,
+		lectureNo: 6,
+		questionHeader: 'Complete',
+		question:
+			'XP teams use ...... time to pay down ...... by refactoring code or do research.',
+		answer: 'SLACK TIME - TECHNICAL DEPT',
+		hint: '',
+		slideNo: 28,
+		solved: false,
+	},
+	{
+		id: 129,
+		lectureNo: 6,
+		questionHeader: 'Complete',
+		question: 'A cross-functional team in XP releases ...... frequently.',
+		answer: 'MINIMAL VIABLE PRODCT',
+		hint: '',
+		slideNo: 22,
+		solved: false,
+	},
+	{
+		id: 130,
+		lectureNo: 6,
+		questionHeader: 'Complete',
+		question:
+			'Agile projects have short iterations; thus, project team receives ...... feedback on product quality throughout SDLC.',
+		answer: 'EARLY and CONTINIOUS',
+		hint: '',
+		slideNo: 11,
+		solved: false,
+	},
+	{
+		id: 131,
+		lectureNo: 6,
+		questionHeader: 'Complete',
+		question:
+			'The general objective of ...... is to visualize and optimize the flow of work within a value-added chain.',
+		answer: 'KANBAN',
+		hint: '',
+		slideNo: 31,
+		solved: false,
+	},
+	{
+		id: 132,
+		lectureNo: 6,
+		questionHeader: 'Complete',
+		question:
+			'One programmer plays ...... role and focuses on clean code, and compiles and runs. Second one plays role of ...... and focuses on the big picture and reviews code for improvement or refactoring.',
+		answer: 'PILOT - NAVIGATOR',
+		hint: '',
+		slideNo: 24,
+		solved: false,
+	},
+	{
+		id: 133,
+		lectureNo: 6,
+		questionHeader: 'Complete',
+		question:
+			'There are 2 levels of plans in XP: ...... .In both levels, there are 3 steps: ......',
+		answer: 'RELEASE PLAN and ITERATION PLAN - EXPLORATION, COMMITMENT, and STEERING',
+		hint: '',
+		slideNo: 20,
+		solved: false,
+	},
+	{
+		id: 134,
+		lectureNo: 6,
+		questionHeader: 'Complete',
+		question:
+			'User stories must address ...... characteristics. Each story includes ...... for these characteristics used to decide when a task is ......',
+		answer: 'FUNCTIONAL and NON-FUNCTIONAL - ACCEPTANCE CRITERIA - FINISHED',
+		hint: '',
+		slideNo: 37,
+		solved: false,
+	},
+	{
+		id: 135,
+		lectureNo: 6,
+		questionHeader: 'Complete',
+		question:
+			'All team members, testers and non-testers, can ...... on both testing and non-testing activities.',
+		answer: 'PROVIDE INPUT',
+		hint: '',
+		slideNo: 42,
+		solved: false,
+	},
+	{
+		id: 136,
+		lectureNo: 7,
+		questionHeader: 'Complete',
+		question:
+			'When the regression testing is automated, the Agile testers are freed to concentrate their manual testing on ...... testing of defect fixes.',
+		answer: 'IMPLEMENTED CHANGES, and CONFIRMATION',
+		hint: '',
+		slideNo: 8,
+		solved: false,
+	},
+	{
+		id: 137,
+		lectureNo: 7,
+		questionHeader: 'Complete',
+		question:
+			'...... iterations occur periodically to resolve any remaining defects and other forms of ......',
+		answer: 'STABILIZATION - TECHNICAL DEPT',
+		hint: '',
+		slideNo: 19,
+		solved: false,
+	},
+	{
+		id: 138,
+		lectureNo: 7,
+		questionHeader: 'Complete',
+		question:
+			'Because of the heavy use of test automation, a higher percentage of the manual testing on Agile projects tends to be done using ...... testing.',
+		answer: 'EXPERIENCE-BASED',
+		hint: '',
+		slideNo: 20,
+		solved: false,
+	},
+	{
+		id: 139,
+		lectureNo: 7,
+		questionHeader: 'Complete',
+		question:
+			'While developers will focus on creating unit tests, testers should focus on creating automated .... and .... tests.',
+		answer: 'INTEGRATION - SYSTEM',
+		hint: '',
+		slideNo: 20,
+		solved: false,
+	},
+	{
+		id: 140,
+		lectureNo: 7,
+		questionHeader: 'Complete',
+		question:
+			'Changes to existing features have testing implications, especially ...... testing implications.',
+		answer: 'REGRESSION',
+		hint: '',
+		slideNo: 21,
+		solved: false,
+	},
+	{
+		id: 141,
+		lectureNo: 7,
+		questionHeader: 'Complete',
+		question:
+			'During an iteration, any given user story will typically progress sequentially through the following test activities: .... and ....',
+		answer: 'UNIT TESTING - FEATURE ACCEPTANCE TESTING',
+		hint: '',
+		slideNo: 21,
+		solved: false,
+	},
 ];
+
+// Stopped at the end of slide 50, lecture 8
 
 // lecture x, slide y
 const MISSING_QUESTIONS_SLIDES = [];
