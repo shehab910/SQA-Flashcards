@@ -18,7 +18,7 @@ A collection of questions and answers from question banks for ISTQB Foundation L
 - [ ] Add How to contribute section to README
 - [ ] Add Screenshots section to README
 ## How to use
-Just visit the [website](https://sqa-flashcard.netlify.app/) and start [memorizing](https://media.tenor.com/52yUflMRmKUAAAAM/peeposad.gif)!
+Just visit the [website](https://sqa-rose.vercel.app/) and start [memorizing](https://media.tenor.com/52yUflMRmKUAAAAM/peeposad.gif)!
 ## Contributes
 1. [Shehab Ihab](https://github.com/shehab910/)
 1. [Omar Abdulrahman](https://github.com/omarr45/)
