@@ -58,13 +58,12 @@ export const questionHeadding = (questType: QuestionType) => {
 
 export const getAllQuestions = () => {
 	const localQuestions = [...defaultLectureQuestions];
-	return localQuestions
-		.filter((q) => q.solved === false)
-		.sort(() => Math.random() - 0.5)
-		.filter(
-			(q) =>
-				q.questionHeader !== 'Exercise' &&
-				q.questionHeader !== 'General Question' &&
-				q.questionHeader !== 'Exersise'
-		);
+	return localQuestions.sort(() => Math.random() - 0.5);
+	// .filter((q) => q.solved === false)
+	// .filter(
+	// 	(q) =>
+	// 		q.questionHeader !== 'Exercise' &&
+	// 		q.questionHeader !== 'General Question' &&
+	// 		q.questionHeader !== 'Exersise'
+	// );
 };
