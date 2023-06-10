@@ -1,10 +1,9 @@
-import './App.css';
-
 import { getAllQuestions, getSlideUrl } from './getQuestion';
 import { useEffect, useState } from 'react';
-
+import type { ChangeEvent } from 'react';
 import ReactGA from 'react-ga4';
 import { makeSlideNoIssueUrl } from './issueHandler';
+import './App.css';
 
 const allQuestions = getAllQuestions();
 
@@ -17,17 +16,7 @@ function App() {
 	const [isLastQuestion, setIsLastQuestion] = useState(false);
 	const [currQuestionI, setCurrQuestionI] = useState(0);
 	const [questions, setQuestions] = useState([...allQuestions]);
-	const [QN, setQN] = useState(allQuestions.length);
 	const currQuestion = questions[currQuestionI];
-
-	// const saveBtnHandler = useCallback(() => {
-	// 	if (isLastQuestion) {
-	// 		deleteLocalQuestions();
-	// 		window.location.reload();
-	// 	} else {
-	// 		saveQuestions(questions);
-	// 	}
-	// }, [isLastQuestion]);
 
 	useEffect(() => {
 		ReactGA.send({
@@ -73,24 +62,14 @@ function App() {
 		setCurrQuestionI((prev) => prev + 1);
 	};
 
-	const handleSelect = (e: any) => {
+	const handleSelect = (e: ChangeEvent<HTMLSelectElement>) => {
 		ReactGA.event({
 			category: 'Select Lecture',
 			action: 'Select Lecture',
 			label: e.target.value,
-			value: e.target.value,
+			value: parseInt(e.target.value),
 		});
-		const lecNo = +e.target.value;
-
-		// if (lecNo === 0) {
-		// 	const newQuestions = [...allQuestions];
-		// 	newQuestions.forEach((q, i) => {
-		// 		q.id = i;
-		// 	});
-		// 	setQuestions(newQuestions);
-		// 	setQN(allQuestions.length);
-		// 	setCurrQuestionI(0);
-		// }
+		const lecNo = parseInt(e.target.value);
 
 		const newQuestions =
 			lecNo === 0
@@ -102,7 +81,6 @@ function App() {
 		});
 
 		setQuestions(newQuestions);
-		setQN(newQuestions.length);
 	};
 
 	return (
@@ -169,10 +147,6 @@ function App() {
 						</button>
 					</a>
 				)}
-
-				{/* <button className="btn-contained" onClick={saveBtnHandler}>
-					{saveBtnText}
-				</button> */}
 
 				<div className="nav-btn-grp">
 					<button
