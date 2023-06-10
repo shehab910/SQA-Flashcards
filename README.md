@@ -12,7 +12,7 @@ A collection of questions and answers from question banks for ISTQB Foundation L
 - [x] Easily create an issue with the missing **slide number**
 - [ ] Easily create an issue with the missing **hint**
 - [x] Display questions and answers for specific lecture
-- [ ] Display progress
+- [x] Display progress
 - [x] Add all questions and answers
 - [ ] Fix dark mode
 - [ ] Add How to contribute section to README
