@@ -111,13 +111,15 @@
 .btn-grp {
   display: flex;
   justify-content: center;
-  gap: 1em;
-  min-width: max-content;
+  gap: 1rem;
+  /* min-width: max-content; */
 }
 
 .nav-btn-grp {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
 }
 
 .finished {
@@ -125,5 +127,14 @@
   border-radius: .5rem;
   margin: 0;
   font-family: 'Kufam', sans-serif;
+}
 
+@media screen and (max-width: 600px) {
+  .nav-btn-grp {
+    flex-wrap: wrap;
+  }
+  .finished {
+    order: -1;
+    width: 100%;
+  }  
 }
