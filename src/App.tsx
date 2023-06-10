@@ -126,10 +126,9 @@ function App() {
 					<option value="8">Lec 8</option>
 					<option value="100">6 or 7 or 8</option>
 				</select>
-				<p># Questions = {QN}</p>
+				<p>{`${currQuestionI + 1} / ${questions.length}`}</p>
 			</div>
 			<div className="main">
-				<h4>{`${currQuestionI + 1}/${questions.length}`}</h4>
 				<h3>{questionHeaddingText}:</h3>
 				<p className="question">{question}</p>
 				<p
