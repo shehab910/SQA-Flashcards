@@ -129,6 +129,7 @@ function App() {
 				<p># Questions = {QN}</p>
 			</div>
 			<div className="main">
+				<h4>{`${currQuestionI + 1}/${questions.length}`}</h4>
 				<h3>{questionHeaddingText}:</h3>
 				<p className="question">{question}</p>
 				<p
