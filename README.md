@@ -11,9 +11,9 @@ A collection of questions and answers from question banks for ISTQB Foundation L
 - [x] Resposive
 - [x] Easily create an issue with the missing **slide number**
 - [ ] Easily create an issue with the missing **hint**
-- [ ] Display questions and answers for specific lecture
+- [x] Display questions and answers for specific lecture
 - [ ] Display progress
-- [ ] Add all questions and answers
+- [x] Add all questions and answers
 - [ ] Fix dark mode
 - [ ] Add How to contribute section to README
 - [ ] Add Screenshots section to README
