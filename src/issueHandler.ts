@@ -22,6 +22,7 @@ export const makeSlideNoIssueUrl = (questionObj: Question) => {
 ### ${questionHeader}
 ${question}
 # Answer found in slide number:
+	lectureNo: <PUT LECTURE NUMBER HERE>
 	slideNo: <PUT SLIDE NUMBER HERE>
 `;
 	return constructIssueUrl(repoUrl, label, title, body);
