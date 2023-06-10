@@ -105,7 +105,8 @@ function App() {
 					<option value="5">Lec 5</option>
 					<option value="6">Lec 6</option>
 					<option value="7">Lec 7</option>
-					{/* <option value="8">Lec 8</option> */}
+					<option value="8">Lec 8</option>
+					<option value="100">6 or 7 or 8</option>
 				</select>
 				<p># Questions = {QN}</p>
 			</div>
