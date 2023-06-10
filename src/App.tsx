@@ -79,7 +79,7 @@ function App() {
 		newQuestions.forEach((q, i) => {
 			q.id = i;
 		});
-
+		setCurrQuestionI(0);
 		setQuestions(newQuestions);
 	};
 
