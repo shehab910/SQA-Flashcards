@@ -11,7 +11,7 @@ export const getSlideUrl = (slideNumber: number) => {
 		case 3:
 			return 'https://docs.google.com/presentation/d/15_LXGam1jmhfzyHqnYAvTT-olIeaxZnP/edit';
 		case 4:
-			return 'https://docs.google.com/presentation/d/15_LXGam1jmhfzyHqnYAvTT-olIeaxZnP/edit';
+			return 'https://docs.google.com/presentation/d/18GVt0ldYyhr20nN1FOzFpCuHGab1TO7w/edit';
 		case 5:
 			return 'https://docs.google.com/presentation/d/18TA9utmpSLXEtMq4i11-6KezsTBINWIR/edit';
 		case 6:
@@ -60,5 +60,11 @@ export const getAllQuestions = () => {
 	const localQuestions = [...defaultLectureQuestions];
 	return localQuestions
 		.filter((q) => q.solved === false)
-		.sort(() => Math.random() - 0.5);
+		.sort(() => Math.random() - 0.5)
+		.filter(
+			(q) =>
+				q.questionHeader !== 'Exercise' &&
+				q.questionHeader !== 'General Question' &&
+				q.questionHeader !== 'Exersise'
+		);
 };
