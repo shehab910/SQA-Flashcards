@@ -3,11 +3,15 @@ import './App.css';
 import { getAllQuestions, getSlideUrl } from './getQuestion';
 import { useEffect, useState } from 'react';
 
+import ReactGA from 'react-ga4';
 import { makeSlideNoIssueUrl } from './issueHandler';
 
 const allQuestions = getAllQuestions();
 
 function App() {
+	const TRACKING_ID = `G-XNKNQ85EBF`;
+	ReactGA.initialize(TRACKING_ID);
+
 	const [isAnswerShown, setIsAnswerShown] = useState(false);
 	const [isHintShown, setIsHintShown] = useState(false);
 	const [isLastQuestion, setIsLastQuestion] = useState(false);
@@ -24,6 +28,14 @@ function App() {
 	// 		saveQuestions(questions);
 	// 	}
 	// }, [isLastQuestion]);
+
+	useEffect(() => {
+		ReactGA.send({
+			hitType: 'pageview',
+			page: window.location.pathname,
+			title: window.document.title,
+		});
+	}, []);
 
 	useEffect(() => {
 		setIsAnswerShown(false);
@@ -62,6 +74,12 @@ function App() {
 	};
 
 	const handleSelect = (e: any) => {
+		ReactGA.event({
+			category: 'Select Lecture',
+			action: 'Select Lecture',
+			label: e.target.value,
+			value: e.target.value,
+		});
 		const lecNo = +e.target.value;
 
 		// if (lecNo === 0) {
