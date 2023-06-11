@@ -857,7 +857,7 @@ export const defaultLectureQuestions: Question[] = [
 			'Identify three guidelines to successful conduct of review process.',
 		answer: '(Open the slide(s) from below)',
 		hint: '',
-		slideNo: 35,
+		slideNo: 31,
 		solved: false,
 		id: 78,
 	},
