@@ -342,7 +342,7 @@ export const defaultLectureQuestions: Question[] = [
 		question: 'Picking the wrong person for a task.',
 		answer: 'Organizational',
 		hint: '',
-		slideNo: -1,
+		slideNo: 77,
 		solved: false,
 		id: 30,
 	},
